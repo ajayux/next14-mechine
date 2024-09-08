@@ -19,11 +19,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {/* <ClientSideProviderTest> */}
-          <div className="container">
             <Navbar />
             {children}
             <Footer />
-          </div>
         {/* </ClientSideProviderTest> */}
       </body>
     </html>

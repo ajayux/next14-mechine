@@ -4,6 +4,20 @@
   --text: white;
   --textSoft: #e5e5e5;
   --btn: #3673fd;
+  --basecolor-1: #ff0;
+  --header-y: 100px;
+}
+
+
+@media (max-width: 992px) {
+  :root {
+    --header-y: 100px;
+  }
+}
+@media (max-width: 576px) {
+  :root {
+    --header-y: 80px;
+  }
 }
 
 * {
@@ -26,12 +40,8 @@ a {
 .container {
   width: 1536px;
   margin: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media (max-width: 1536px) {
@@ -71,6 +81,7 @@ a {
     width: 475px;
   }
 }
+
 @media (max-width: 475px) {
   .container {
     width: 380px;

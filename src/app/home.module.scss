@@ -1,0 +1,166 @@
+.hero {
+  width: 100%;
+  height: auto;
+  display: block;
+  .slide_item {
+    width: 100%;
+    height: 468px;
+    display: block;
+    padding: calc(var(--header-y) + 40px) 0 40px 0;
+    position: relative;
+    z-index: 0;
+    @media only screen and (min-width: 576px) {
+      height: 100vh;
+      padding: calc(var(--header-y) + 40px) 0 40px 0;
+    }
+    @media only screen and (min-width: 992px) {
+      min-height: 520px;
+    }
+    @media only screen and (min-width: 1551px) {
+      min-height: 576px;
+      padding: calc(var(--header-y) + 50px) 0 50px 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        180deg,
+        rgba(black, 0) 60%,
+        rgba(black, 0.8) 100%
+      );
+    }
+    .container {
+      height: 100%;
+    }
+    .dFlx {
+      height: 100%;
+      position: relative;
+      z-index: 0;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-end;
+      @media only screen and (min-width: 992px) {
+        flex-direction: row;
+        justify-content: initial;
+        align-items: flex-end;
+      }
+      & > .fullSd {
+        width: 100%;
+      }
+      & > .lftSd {
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          width: 60%;
+        }
+      }
+      & > .rgtSd {
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          width: 40%;
+        }
+      }
+    }
+    & > img,
+    & > picture,
+    & > video {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cntWrap {
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+      & > * {
+        color: white;
+        margin: 4px 0;
+        transition: all 0.4s ease;
+        @media only screen and (min-width: 576px) {
+          margin: 6px 0;
+        }
+        @media only screen and (min-width: 992px) {
+          margin: 8px 0;
+        }
+      }
+      .mHead {
+        font-size: 36px;
+        line-height: 1;
+        font-weight: 700;
+        color: var(--basecolor-1);
+        @media only screen and (min-width: 468px) {
+          font-size: 38px;
+        }
+        @media only screen and (min-width: 576px) {
+          font-size: 48px;
+        }
+        @media only screen and (min-width: 768px) {
+          font-size: 58px;
+        }
+        @media only screen and (min-width: 992px) {
+          font-size: 68px;
+        }
+        @media only screen and (min-width: 1200px) {
+          font-size: 84px;
+        }
+        @media only screen and (min-width: 1551px) {
+          font-size: 120px;
+        }
+      }
+      .sHead {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 400;
+        @media only screen and (min-width: 468px) {
+          font-size: 26px;
+        }
+        @media only screen and (min-width: 576px) {
+          font-size: 32px;
+        }
+        @media only screen and (min-width: 992px) {
+          font-size: 44px;
+        }
+        @media only screen and (min-width: 1200px) {
+          font-size: 54px;
+        }
+        @media only screen and (min-width: 1551px) {
+          font-size: 80px;
+        }
+      }
+      .txt {
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 700;
+        @media only screen and (min-width: 576px) {
+          font-size: 16px;
+        }
+        @media only screen and (min-width: 992px) {
+          font-size: 18px;
+        }
+        @media only screen and (min-width: 1551px) {
+          font-size: 20px;
+        }
+      }
+    }
+    .btnWrap {
+      gap: 5px 10px;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      @media only screen and (min-width: 576px) {
+        gap: 10px 20px;
+      }
+      @media only screen and (min-width: 992px) {
+        gap: 15px 30px;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
