@@ -63,7 +63,9 @@ const Home = () => {
                   <div className={styles.lftSd}>
                     <div className={styles.cntWrap}>
                       <h1 className={styles.mHead}>{slide.title}</h1>
-                      {slide.tagline && <p className={styles.txt}> {slide.tagline}</p>}
+                      {slide.tagline && (
+                        <p className={styles.txt}> {slide.tagline}</p>
+                      )}
                     </div>
                   </div>
                   <div className={styles.rgtSd}>
@@ -94,16 +96,137 @@ const Home = () => {
         </Swiper>
       </section>
 
-      <section id="About" className="py-16">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8">About Us</h2>
-          <p>
-            Welcome to our website! We are dedicated to bringing you the best
-            user experience with the latest technologies, including Next.js and
-            Swiper.
-          </p>
+      <section className={styles.about}>
+        <div className={"container"}>
+          <div className={styles.d_flx}>
+            <div className={styles.w50}>
+              <div className={styles.imgOuter}>
+                <div className={styles.imgWrap}>
+                  <img
+                    src="https://placehold.co/1920x1080"
+                    width="690"
+                    height="790"
+                    loading="lazy"
+                    alt="about"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className={styles.w50}>
+              <div className={styles.cntWrap}>
+                <div className={"tleWrap"}>
+                  <div className={"mTle"}>ABOUT US</div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore placeat ea recusandae voluptate unde quis fugiat
+                  mollitia delectus quaerat! Facilis sed atque repudiandae
+                  laudantium maiores rerum cumque soluta consectetur dolorem
+                  nobis possimus nam eaque fugit, numquam voluptatum suscipit
+                  sunt enim, libero ab, voluptas ipsa? Porro, facilis? Accusamus
+                  quisquam perferendis blanditiis!
+                </p>
+                <div className={styles.btnWrap}>
+                  <Link
+                    href="/about"
+                    className={styles.baseBtn}
+                    title="click here"
+                    aria-label="about"
+                  >
+                    <span>READ MORE</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
+      
+    <section class={styles.countSection}>
+        <img src="assets/images/count-bg.jpg" width="1920" height="760" loading="lazy" alt="bg"/>
+        <div className={"container"}>
+            <div className={styles.dFlx}>
+                <div className={styles.lftSd}>
+                    <div className={styles.globeWrap}>
+                        <img src="assets/images/img-globeBg.png" className={styles.imgGlobeBg} width="712" height="712" loading="lazy" alt="globe"/>
+                        <img src="assets/images/img-globe.png" className={styles.imgGlobe} width="712" height="712" loading="lazy" alt="globebg"/>
+                        <div className={styles.tle}>Impact</div>
+                    </div>
+                </div>
+                <div className={styles.rgtSd}>
+                    <div className={styles.itemFlx}>
+                        <div className={styles.item}>
+                            <div className={styles.countBx} aria-label="count">
+                                <div className={styles.bxWrap}>
+                                    <div className={styles.iconWrap}>
+                                        <img src="https://placehold.co/400x400/png" width="60" height="60" loading="lazy" alt="count"/>
+                                    </div>
+                                    <h3 className={styles.num}><span className={styles.counter} data-countto="70" data-duration="3000">0</span>%</h3>
+                                    <div className={styles.txt}>Reduction in agricultural inputs</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.item}>
+                            <div className={styles.countBx} aria-label="count">
+                                <div className={styles.bxWrap}>
+                                    <div className={styles.iconWrap}>
+                                        <img src="https://placehold.co/100x100" width="60" height="60" loading="lazy" alt="count"/>
+                                    </div>
+                                    <h3 className={styles.num}><span className={styles.counter} data-countto="8400" data-duration="3000">0</span></h3>
+                                    <div className={styles.txt}>Farmers</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.item}>
+                            <div className={styles.countBx} aria-label="count">
+                                <div className={styles.bxWrap}>
+                                    <div className={styles.iconWrap}>
+                                        <img src="https://placehold.co/100x100" width="60" height="60" loading="lazy" alt="count"/>
+                                    </div>
+                                    <h3 className={styles.num}><span className={styles.counter} data-countto="4100" data-duration="3000">0</span></h3>
+                                    <div className={styles.txt}>Ha Dead land Recovery</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.item}>
+                            <div className={styles.countBx} aria-label="count">
+                                <div className={styles.bxWrap}>
+                                    <div className={styles.iconWrap}>
+                                        <img src="https://placehold.co/100x100" width="60" height="60" loading="lazy" alt="count"/>
+                                    </div>
+                                    <h3 className={styles.num}><span className={styles.counter} data-countto="30" data-duration="3000">0</span>%</h3>
+                                    <div className={styles.txt}>Increase in Yield</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.item}>
+                            <div className={styles.countBx} aria-label="count">
+                                <div className={styles.bxWrap}>
+                                    <div className={styles.iconWrap}>
+                                        <img src="https://placehold.co/100x100" width="60" height="60" alt="count"/>
+                                    </div>
+                                    <h3 className={styles.num}>$<span className={styles.counter} data-countto="600" data-duration="3000">0</span>K</h3>
+                                    <div className={styles.txt}>Profit generated by farmers</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.item}>
+                            <div className={styles.countBx} aria-label="count">
+                                <div className={styles.bxWrap}>
+                                    <div className={styles.iconWrap}>
+                                        <img src="assets/images/icon-count-6.svg" width="60" height="60" loading="lazy" alt="count"/>
+                                    </div>
+                                    <h3 className={styles.num}>Zero Pesticide</h3>
+                                    <div className={styles.txt}>Application</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </>
   );
 };
