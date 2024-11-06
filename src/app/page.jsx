@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Link from "next/link";
+import Image from "next/image";
 
 // Sample slider data
 const demoSliderData = {
@@ -102,13 +103,21 @@ const Home = () => {
             <div className={styles.w50}>
               <div className={styles.imgOuter}>
                 <div className={styles.imgWrap}>
-                  <img
+                <Image
+        src="https://placehold.co/1920x1080"
+        width={500}
+        height={500}
+        alt="about"
+        quality={100} // Optional
+        layout="responsive" // This is fine if you need responsiveness
+      />
+                  {/* <img
                     src="https://placehold.co/1920x1080"
                     width="690"
                     height="790"
                     loading="lazy"
                     alt="about"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
