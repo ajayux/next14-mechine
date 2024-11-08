@@ -17,7 +17,7 @@ const demoSliderData = {
       id: 1,
       title: "Welcome to our website!",
       tagline: "We are dedicated to bringing you the best user experience",
-      image: "https://placehold.co/1920x1080",
+      image: "https://elements-resized.envatousercontent.com/envato-shoebox/60c8/fd35-0cd4-419b-9797-bb6f2feef509/PhilippeDegroote_ID14915_456020_024.jpg?w=1600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=bf3270d67c71d7e93afee3bfc454007f6dc7f46eea8f53c76f7ee2f75fc23c7c",
       buttons: [
         {
           id: 1,
@@ -31,7 +31,7 @@ const demoSliderData = {
       id: 2,
       title: "Welcome to 2nd slide!",
       tagline: "We are dedicated to bringing you the best user experience",
-      image: "https://placehold.co/1920x1080",
+      image: "https://elements-resized.envatousercontent.com/envato-shoebox/81ba/3d84-ed10-4eef-b9b5-b4c126915c1b/PhilippeDegroote_ID14915_456080_059.jpg?w=1600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=4ec3ae07bd78f6de83afb051880714ae8c56e55a40424368e149c08414c82858",
       buttons: [
         {
           id: 1,
@@ -58,7 +58,10 @@ const Home = () => {
         >
           {demoSliderData.hero.map((slide) => (
             <SwiperSlide key={slide.id} className={styles.slide_item}>
-              <img src={slide.image} width={1920} height={1080} alt="hero" />
+              <Image
+              fill
+              src={slide.image}
+        alt="hero" />
               <div className={`container ${styles.container}`}>
                 <div className={styles.dFlx}>
                   <div className={styles.lftSd}>
@@ -104,20 +107,13 @@ const Home = () => {
               <div className={styles.imgOuter}>
                 <div className={styles.imgWrap}>
                 <Image
-        src="https://placehold.co/1920x1080"
-        width={500}
-        height={500}
+        src="https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/31/20/20/ff/d1/v1_E10/E103ZDAK.jpg?w=1600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=08e7cd11d8d00e35945ffda87091926dd10ca9acb154522b1f2af93fbc4af53f"
+        width={676}
+        height={768}
+        sizes="(max-width: 768px) 100vw, 33vw"
         alt="about"
-        quality={100} // Optional
         layout="responsive" // This is fine if you need responsiveness
       />
-                  {/* <img
-                    src="https://placehold.co/1920x1080"
-                    width="690"
-                    height="790"
-                    loading="lazy"
-                    alt="about"
-                  /> */}
                 </div>
               </div>
             </div>

@@ -5,11 +5,10 @@ const nextConfig = {
   //     prependData: `@import "variables.scss";`,
   // },
   images:{
-    domains: ['placehold.co'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'placehold.co',
+        hostname: 'elements-resized.envatousercontent.com',
       },
       {
         protocol: 'https',
