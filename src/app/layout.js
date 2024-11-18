@@ -1,10 +1,11 @@
-import { Inter } from "next/font/google";
+import { Inter, Public_Sans } from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
-import ClientSideProviderTest from "@/components/clientSideProviderTest";
+// import ClientSideProviderTest from "@/components/clientSideProviderTest";
 
 const inter = Inter({ subsets: ["latin"] });
+const publicSans = Public_Sans({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
@@ -17,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${publicSans.className}`}>
         {/* <ClientSideProviderTest> */}
             <Navbar />
             {children}

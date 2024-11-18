@@ -1,56 +1,20 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  --bg: #0d0c22;
-  --bgSoft: #2d2b42;
-  --text: white;
+  --bg-1: #000214;
+  --bg-2: #2d2b42;
+  --text-1: white;
   --textSoft: #e5e5e5;
   --btn: #3673fd;
-  --basecolor-1: #ff0;
-  --basecolor-2: #f00;
+  --base-1: #f6a000;
+  --base-2: #415649;
   --header-y: 100px;
-}
-$fontstack1: "Aeroportal", sans-serif;
-
-$basecolor: #30bdbb;
-$basecolor2: #1fb7b5;
-$basecolor3: #f8f8f8;
-
-$text: #000000;
-
-$black: black;
-$white: white;
-
-@mixin defaultValue {
-  cursor: pointer;
-  border: none;
-  border-radius: 0;
-  outline: none;
-  text-decoration: none;
-  text-align: unset;
-  list-style-type: none;
-  background: none;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
-}
-
-@mixin display {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-@mixin center {
-  display: -ms-;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin imgFit {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 @media (max-width: 992px) {
@@ -64,15 +28,9 @@ $white: white;
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: var(--bg);
-  color: var(--text);
+  background-color: var(--bg-1);
+  color: var(--text-1);
 }
 
 a {
@@ -168,7 +126,7 @@ a {
     font-size: 24px;
     line-height: 1;
     font-weight: 700;
-    color: $text;
+    color: var(--text-1);
     @media only screen and (min-width: 376px) {
       font-size: 26px;
     }
@@ -197,7 +155,7 @@ a {
     font-size: 16px;
     line-height: 1.2;
     font-weight: 400;
-    color: $text;
+    color: var(--text-1);
     display: block;
     @media only screen and (min-width: 576px) {
       font-size: 18px;
@@ -209,7 +167,7 @@ a {
       font-size: 22px;
     }
     span {
-      color: $basecolor;
+      color: var(--bg-1);
     }
   }
 }

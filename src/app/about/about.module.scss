@@ -1,0 +1,413 @@
+.hero {
+  width: 100%;
+  height: auto;
+  display: block;
+  .slide_item {
+    width: 100%;
+    height: 468px;
+    display: block;
+    padding: calc(var(--header-y) + 40px) 0 40px 0;
+    position: relative;
+    z-index: 0;
+    @media only screen and (min-width: 576px) {
+      height: 100vh;
+      padding: calc(var(--header-y) + 40px) 0 40px 0;
+    }
+    @media only screen and (min-width: 992px) {
+      min-height: 520px;
+    }
+    @media only screen and (min-width: 1551px) {
+      min-height: 576px;
+      padding: calc(var(--header-y) + 50px) 0 50px 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        180deg,
+        rgba(black, 0) 60%,
+        rgba(black, 0.8) 100%
+      );
+    }
+    .container {
+      height: 100%;
+    }
+    .dFlx {
+      height: 100%;
+      position: relative;
+      z-index: 0;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-end;
+      @media only screen and (min-width: 992px) {
+        flex-direction: row;
+        justify-content: initial;
+        align-items: flex-end;
+      }
+      & > .fullSd {
+        width: 100%;
+      }
+      & > .lftSd {
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          width: 60%;
+        }
+      }
+      & > .rgtSd {
+        width: 100%;
+        @media only screen and (min-width: 992px) {
+          width: 40%;
+        }
+      }
+    }
+    & > img,
+    & > picture,
+    & > video {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .cntWrap {
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 1;
+      & > * {
+        color: white;
+        margin: 4px 0;
+        transition: all 0.4s ease;
+        @media only screen and (min-width: 576px) {
+          margin: 6px 0;
+        }
+        @media only screen and (min-width: 992px) {
+          margin: 8px 0;
+        }
+      }
+      .mHead {
+        font-size: 36px;
+        line-height: 1;
+        font-weight: 700;
+        color: var(--basecolor-1);
+        @media only screen and (min-width: 468px) {
+          font-size: 38px;
+        }
+        @media only screen and (min-width: 576px) {
+          font-size: 48px;
+        }
+        @media only screen and (min-width: 768px) {
+          font-size: 58px;
+        }
+        @media only screen and (min-width: 992px) {
+          font-size: 68px;
+        }
+        @media only screen and (min-width: 1200px) {
+          font-size: 84px;
+        }
+        @media only screen and (min-width: 1551px) {
+          font-size: 120px;
+        }
+      }
+      .sHead {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 400;
+        @media only screen and (min-width: 468px) {
+          font-size: 26px;
+        }
+        @media only screen and (min-width: 576px) {
+          font-size: 32px;
+        }
+        @media only screen and (min-width: 992px) {
+          font-size: 44px;
+        }
+        @media only screen and (min-width: 1200px) {
+          font-size: 54px;
+        }
+        @media only screen and (min-width: 1551px) {
+          font-size: 80px;
+        }
+      }
+      .txt {
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 700;
+        @media only screen and (min-width: 576px) {
+          font-size: 16px;
+        }
+        @media only screen and (min-width: 992px) {
+          font-size: 18px;
+        }
+        @media only screen and (min-width: 1551px) {
+          font-size: 20px;
+        }
+      }
+    }
+    .btnWrap {
+      gap: 5px 10px;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      @media only screen and (min-width: 576px) {
+        gap: 10px 20px;
+      }
+      @media only screen and (min-width: 992px) {
+        gap: 15px 30px;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+.about {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 30px 0;
+  @media only screen and (min-width: 576px) {
+    padding: 40px 0;
+  }
+  @media only screen and (min-width: 992px) {
+    padding: 60px 0;
+  }
+  @media only screen and (min-width: 1551px) {
+    padding: 80px 0;
+  }
+  .d_flx {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (min-width: 576px) {
+      margin: 0 -10px;
+    }
+    @media only screen and (min-width: 992px) {
+      margin: 0 -15px;
+    }
+    @media only screen and (min-width: 1200px) {
+      margin: 0 -30px;
+    }
+    @media only screen and (min-width: 1551px) {
+      margin: 0 -50px;
+    }
+    & > * {
+      padding: 10px 0;
+      @media only screen and (min-width: 576px) {
+        padding: 0 10px;
+      }
+      @media only screen and (min-width: 992px) {
+        padding: 0 15px;
+      }
+      @media only screen and (min-width: 1200px) {
+        padding: 0 30px;
+      }
+      @media only screen and (min-width: 1551px) {
+        padding: 0 50px;
+      }
+    }
+    & > .w50 {
+      width: 100%;
+      @media only screen and (min-width: 576px) {
+        width: calc(100% / 2);
+      }
+    }
+  }
+  .imgWrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s;
+    }
+  }
+  .cntWrap {
+    p {
+      text-align: justify;
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+    .btnWrap {
+      margin-top: 10px;
+      @media only screen and (min-width: 576px) {
+        margin-top: 20px;
+      }
+      @media only screen and (min-width: 992px) {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.countSection {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  padding: 40px 0;
+  position: relative;
+  z-index: 0;
+  @media only screen and (min-width: 576px) {
+    padding: 60px 0;
+  }
+  @media only screen and (min-width: 992px) {
+    padding: 80px 0;
+  }
+  @media only screen and (min-width: 1551px) {
+    padding: 100px 0;
+  }
+  & > img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-color: rgba(black, 0.6);
+  }
+  .dFlx {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @media only screen and (min-width: 576px) {
+      margin: 0 -15px;
+    }
+    @media only screen and (min-width: 992px) {
+      margin: 0 -30px;
+    }
+    @media only screen and (min-width: 1551px) {
+      margin: 0 -60px;
+    }
+    & > * {
+      padding: 10px 0;
+      @media only screen and (min-width: 576px) {
+        padding: 0 15px;
+      }
+      @media only screen and (min-width: 992px) {
+        padding: 0 30px;
+      }
+      @media only screen and (min-width: 1551px) {
+        padding: 0 60px;
+      }
+    }
+    & > .lftSd {
+      width: 100%;
+      @media only screen and (min-width: 576px) {
+        width: 40%;
+      }
+    }
+    & > .rgtSd {
+      width: 100%;
+      @media only screen and (min-width: 576px) {
+        width: 60%;
+      }
+    }
+  }
+  .globeWrap {
+    width: 100%;
+    height: 100%;
+    max-width: 276px;
+    max-height: 276px;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+    @media only screen and (min-width: 992px) {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    img {
+      width: 100%;
+    }
+    .imgGlobeBg {
+      position: absolute;
+      transform: scale(1.08);
+      transform-origin: center;
+    }
+    .imgGlobe {
+      animation: rotation 40s linear infinite;
+    }
+    .tle {
+      font-size: 34px;
+      line-height: 1;
+      font-weight: 600;
+      color: white;
+      margin: 0;
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      bottom: 50%;
+      transform: translate(-50%, 50%);
+      text-shadow: 2px 2px 2px var(--basecolor-1);
+      @media only screen and (min-width: 468px) {
+        font-size: 38px;
+      }
+      @media only screen and (min-width: 576px) {
+        font-size: 44px;
+      }
+      @media only screen and (min-width: 992px) {
+        font-size: 54px;
+      }
+      @media only screen and (min-width: 1551px) {
+        font-size: 58px;
+      }
+    }
+  }
+  .itemFlx {
+    margin: 0 -6px;
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (min-width: 576px) {
+      margin: 0 -8px;
+    }
+    @media only screen and (min-width: 992px) {
+      margin: 0 -10px;
+    }
+    @media only screen and (min-width: 1551px) {
+      margin: 0 -15px;
+    }
+    & > * {
+      padding: 6px;
+      @media only screen and (min-width: 576px) {
+        padding: 8px;
+      }
+      @media only screen and (min-width: 992px) {
+        padding: 10px;
+      }
+      @media only screen and (min-width: 1551px) {
+        padding: 15px;
+      }
+    }
+    & > .item {
+      width: calc(100% / 2);
+      @media only screen and (min-width: 468px) {
+        width: calc(100% / 3);
+      }
+      @media only screen and (min-width: 576px) {
+        width: calc(100% / 2);
+      }
+      @media only screen and (min-width: 992px) {
+        width: calc(100% / 3);
+      }
+    }
+  }
+}

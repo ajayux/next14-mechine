@@ -26,7 +26,7 @@
 
 .line{
   margin: 100px;
-  color: var(--bgSoft)
+  color: var(--bg-2)
 }
 
 @media (max-width: 768px) {
